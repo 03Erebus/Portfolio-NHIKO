@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-nhiko",
+  "version": "1.0.0",
+  "description": "Hello, I'm Nhiko, a CS Student (BS CS Application Development Track) at the University of Makati, and I love creating and crafting designs because it's part of my passion for the arts. This is a new way to create art using code and digitize it, a modern way to express emotions and feelings utilizing our technology.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nekurie/Portfolio-NHIKO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nekurie/Portfolio-NHIKO/issues"
+  },
+  "homepage": "https://github.com/Nekurie/Portfolio-NHIKO#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.3.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.0",
+    "@tailwindcss/cli": "^4.3.1",
+    "simple-icons": "^16.24.1"
+  }
+}
