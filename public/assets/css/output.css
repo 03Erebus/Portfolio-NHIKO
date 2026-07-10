@@ -426,17 +426,11 @@
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
-  .h-\[70\%\] {
-    height: 70%;
-  }
   .h-\[200px\] {
     height: 200px;
   }
   .h-\[300px\] {
     height: 300px;
-  }
-  .h-\[400px\] {
-    height: 400px;
   }
   .h-auto {
     height: auto;
@@ -799,9 +793,6 @@
   }
   .border-transparent {
     border-color: transparent;
-  }
-  .bg-\[url-\(\'\/assets\/projects\/wireframes\.png\'\)\] {
-    background-color: url-('/assets/projects/wireframes.png');
   }
   .bg-amber-400 {
     background-color: var(--color-amber-400);
@@ -1427,11 +1418,6 @@
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 18);
       height: calc(var(--spacing) * 18);
-    }
-  }
-  .md\:h-\[80\%\] {
-    @media (width >= 48rem) {
-      height: 80%;
     }
   }
   .md\:h-\[400px\] {
