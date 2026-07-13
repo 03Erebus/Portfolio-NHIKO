@@ -48,13 +48,13 @@
         <!-- Quick Details -->
         <div class="flex flex-row items-start justify-between
                     mx-auto max-w-6xl w-full divide-x divide-gray-200 dark:divide-gray-800">
-            <!-- Client -->
+            <!-- Status -->
             <div class="px-2 sm:px-4 py-4 flex-1">
                 <p class="text-[10px] sm:text-xs md:text-sm text-gray-500 mb-1">
-                    Client
+                    Status
                 </p>
                 <p class="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-800 truncate dark:text-gray-200">
-                    Diverse Population
+                    Done
                 </p>
             </div>
             <!-- Year -->

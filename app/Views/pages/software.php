@@ -154,73 +154,73 @@
 
 <!-- JavaScript -->
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", () => {
 
-    const projectsList = document.getElementById('projects-list');
-    const projectDetailsView = document.getElementById('project-details');
-    const skeletonLoader = document.getElementById('skeleton-loader');
-    const skeletonLoader1 = document.getElementById('skeleton-loader-1');
-    const titlePage = document.getElementById('title-page');
-    const projectContent = document.getElementById('project-content')
+        const projectsList = document.getElementById('projects-list');
+        const projectDetailsView = document.getElementById('project-details');
+        const skeletonLoader = document.getElementById('skeleton-loader');
+        const skeletonLoader1 = document.getElementById('skeleton-loader-1');
+        const titlePage = document.getElementById('title-page');
+        const projectContent = document.getElementById('project-content')
 
-    window.showProject = function(projectId) {
-        // 1. Hide the grid of folders
-        projectsList.classList.add('hidden');
-        projectsList.classList.remove('flex');
-        titlePage.classList.add('hidden');
-        titlePage.classList.remove('flex');
+        window.showProject = function(projectId) {
+            // 1. Hide the grid of folders
+            projectsList.classList.add('hidden');
+            projectsList.classList.remove('flex');
+            titlePage.classList.add('hidden');
+            titlePage.classList.remove('flex');
 
-        // 2. Hide ALL project files first (Reset step)
-        document.querySelectorAll('.dynamic-project').forEach(project => {
-            project.classList.add('hidden');
-        });
+            // 2. Hide ALL project files first (Reset step)
+            document.querySelectorAll('.dynamic-project').forEach(project => {
+                project.classList.add('hidden');
+            });
 
-        // 3. Show the breathing skeleton loader
-        skeletonLoader.classList.remove('hidden');
-        skeletonLoader.classList.add('flex');
+            // 3. Show the breathing skeleton loader
+            skeletonLoader.classList.remove('hidden');
+            skeletonLoader.classList.add('flex');
 
-        // 3. Simulate a loading time (e.g., fetching from database)
-        // We use setTimeout to force a brief 800-millisecond delay so the user actually sees the cool animation!
+            // 3. Simulate a loading time (e.g., fetching from database)
+            // We use setTimeout to force a brief 800-millisecond delay so the user actually sees the cool animation!
+            setTimeout(() => {
+                // Hide the skeleton
+                skeletonLoader.classList.add('hidden');
+                skeletonLoader.classList.remove('flex');
+
+                // Reveal the actual details wrapper
+                projectDetailsView.classList.remove('hidden');
+                projectDetailsView.classList.add('flex');
+
+                // Reveal the SPECIFIC project that was clicked!
+                const targetProject = document.getElementById(projectId);
+                if(targetProject) {
+                    targetProject.classList.remove('hidden');
+                }
+            }, 800); // 800ms delay. You can adjust this!
+        }
+
+        window.hideProject = function() {
+            // Hide the details wrapper
+            projectDetailsView.classList.add('hidden');
+            projectDetailsView.classList.remove('flex');
+
+            // Reveal the grid of folders immediately (no loading needed to go back)
+            projectsList.classList.remove('hidden');
+            projectsList.classList.add('flex');
+            titlePage.classList.remove('hidden');
+            titlePage.classList.add('flex');
+        }
+
         setTimeout(() => {
-            // Hide the skeleton
-            skeletonLoader.classList.add('hidden');
-            skeletonLoader.classList.remove('flex');
 
-            // Reveal the actual details wrapper
-            projectDetailsView.classList.remove('hidden');
-            projectDetailsView.classList.add('flex');
+        skeletonLoader1.classList.add('hidden');
+        skeletonLoader1.classList.remove('flex');
 
-            // Reveal the SPECIFIC project that was clicked!
-            const targetProject = document.getElementById(projectId);
-            if(targetProject) {
-                targetProject.classList.remove('hidden');
-            }
-        }, 800); // 800ms delay. You can adjust this!
-    }
+        projectContent.classList.remove('hidden');
+        projectContent.classList.add('flex');
 
-    window.hideProject = function() {
-        // Hide the details wrapper
-        projectDetailsView.classList.add('hidden');
-        projectDetailsView.classList.remove('flex');
-
-        // Reveal the grid of folders immediately (no loading needed to go back)
-        projectsList.classList.remove('hidden');
-        projectsList.classList.add('flex');
-        titlePage.classList.remove('hidden');
-        titlePage.classList.add('flex');
-    }
-
-    setTimeout(() => {
-
-    skeletonLoader1.classList.add('hidden');
-    skeletonLoader1.classList.remove('flex');
-
-    projectContent.classList.remove('hidden');
-    projectContent.classList.add('flex');
-
-    }, 800);
+        }, 800);
 
 
-});
+    });
 
 </script>

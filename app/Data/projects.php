@@ -27,6 +27,12 @@ return [
                 'type' => 'desktop',
                 'image' => 'surveillance-heliocam.png', // Add your desktop image filename here
                 'angle_class' => 'rotate-0'
+            ],
+            [
+                'title' => 'Session',
+                'type' => 'desktop',
+                'image' => 'create-session-helio.png', // Add your desktop image filename here
+                'angle_class' => 'rotate-0'
             ]
         ]
     ],
@@ -39,13 +45,13 @@ return [
             [
                 'title' => 'Mobile View',
                 'type' => 'mobile',
-                'image' => '',
+                'image' => 'mobile-dashboard-ITRF.png',
                 'angle' => 'rotate-6'
             ],
             [
                 'title' => 'Desktop View',
                 'type' => 'desktop',
-                'image' => '',
+                'image' => 'web-dashboard1-ITRF.png',
                 'angle' => 'rotate-0'
             ]
         ]
