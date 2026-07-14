@@ -55,5 +55,37 @@ return [
                 'angle' => 'rotate-0'
             ]
         ]
+    ],
+    [
+        'id' => 'project-3',
+        'file' => 'project-3.php',
+        'title' => 'FitNEase',
+        'category' => 'Software',
+        'mockups' => [
+            [
+                'title' => 'Mobile View',
+                'type' => 'mobile',
+                'image' => 'achieved_FitNEase.jpg',
+                'angle' => 'rotate-6'
+            ],
+            [
+                'title' => 'Mobile View',
+                'type' => 'mobile',
+                'image' => 'complete_FitNEase.jpg',
+                'angle' => 'rotate-6'
+            ],
+            [
+                'title' => 'Mobile View',
+                'type' => 'mobile',
+                'image' => 'group_FitNEase.jpg',
+                'angle' => 'rotate-6'
+            ],
+            [
+                'title' => 'Mobile View',
+                'type' => 'mobile',
+                'image' => 'working_FitNEase.jpg',
+                'angle' => 'rotate-6'
+            ]
+        ]
     ]
 ];

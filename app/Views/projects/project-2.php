@@ -17,14 +17,14 @@
     <div class="flex flex-col items-start justify-between divide-y divide-gray-200 dark:divide-gray-800">
 
         <!-- Project Title -->
-        <div class="flex flex-row items-start max-w-6xl w-full mx-auto">
+        <div class="flex flex-row items-center max-w-6xl w-full mx-auto">
 
-            <div class="p-2 lg:p-4 flex items-center justify-center">
+            <div class="p-2 lg:p-4 w-auto">
                 <img alt="ITRF Logo" src="/assets/projects/ITRF-logo.png"
                         class="size-8 md:size-14 lg:size-18 resize">
             </div>
 
-            <div class="p-2 lg:p-4 w-2xl">
+            <div class="p-2 lg:p-4 w-auto">
                 <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold 
                             bg-gradient-to-r from-green-500 to-blue-500 
                             bg-clip-text text-transparent transition-colors duration-500 drop-shadow-lg">
@@ -82,7 +82,7 @@
                     Platform
                 </p>
                 <p class="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-800 truncate dark:text-gray-200">
-                    Web, Android
+                    Web, Android, iOS
                 </p>
             </div>
         </div>
@@ -133,12 +133,6 @@
                     The goal was to improve and automate the existing system, addressing inefficiencies in how requests were handled.">
                 </p>
 
-                <p class="scroll-typewriter text-[12px] sm:text-sm md:text-md lg:text-lg text-gray-600 dark:text-gray-200"
-                    data-text="Powered by AI, HelioCam automatically tells routine movement apart from genuine threats, 
-                    triggering alerts and a 30-second replay only when something suspicious happens. 
-                    By repurposing old phones instead of buying new cameras, it offers homeowners, small businesses, 
-                    and families an affordable, sustainable security solution.">
-                </p>
             </div>
 
         </div>
@@ -216,9 +210,9 @@
             </div>
 
             <div class="absolute bottom-10 z-20 p-6 pointer-events-none">
-                <h1 class="text-xl font-bold bg-gradient-to-r from-green-500 to-blue-500 
+                <h1 class="text-2xl font-bold bg-gradient-to-r from-green-500 to-blue-500 
                             bg-clip-text text-transparent transition-colors duration-300
-                            md:text-2xl lg:text-4xl drop-shadow-lg">
+                            md:text-4xl lg:text-6xl drop-shadow-lg">
                     ITRF
                 </h1>
             </div>
@@ -268,7 +262,8 @@
 
                     <p class="scroll-typewriter text-[12px] sm:text-sm md:text-md lg:text-lg text-gray-600 dark:text-gray-200"
                         data-text="With my supervisor's guidance, I was given access to view the existing ITRF system and communicated directly with the Support Unit to validate design decisions. 
-                        I researched existing ITRF and similar systems, then presented options to the Support Head for feedback and verification.">
+                        I researched existing ITRF and similar systems, then presented options to the Support Head for feedback and verification — 
+                        ensuring the redesign stayed consistent with FOPM's branding and theme guidelines.">
                     </p>
 
                 </div>
@@ -298,7 +293,9 @@
                     </h1>
 
                     <p class="scroll-typewriter text-[12px] sm:text-sm md:text-md lg:text-lg text-gray-600 dark:text-gray-200"
-                        data-text="I built reusable design components to make revisions faster whenever the client or my supervisor requested changes.">
+                        data-text="I built reusable design components — buttons, forms, cards, and navigation elements — 
+                        based on FOPM's branding guidelines (colors, typography, and visual style), making it easy to apply consistent, 
+                        on-brand revisions whenever the client or my supervisor requested changes.">
                     </p>
 
             </div>
@@ -328,7 +325,7 @@
                     mx-auto py-4 bg-[url('/assets/projects/mockup-laptop2-ITRF.png')]">
         </div>
 
-        <!-- My Role & Process -->
+        <!-- Outcome -->
         <div class="flex flex-col items-start max-w-6xl w-full mx-auto">
 
             <div class="p-2 md:p-4 lg:p-6 w-full space-y-2.5">

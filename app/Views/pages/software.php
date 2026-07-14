@@ -106,6 +106,43 @@
 
         </button>
 
+        <!-- Project Card 3 -->
+        <button onclick="showProject('project-3')" 
+                class="flex items-center justify-between p-2 hover-breathe
+                bg-white dark:bg-gray-800 border border-gray-200 
+                dark:border-gray-700 rounded-xl hover:shadow-md transition-shadow w-full text-left">
+
+            <!-- Left Content -->
+            <div class="flex py-2 px-4 space-x-4 items-center">
+                <svg fill="none" viewBox="0 0 24 24" 
+                    stroke-width="1.5" stroke="currentColor" 
+                    class="size-12 inline-block text-blue-800 dark:text-blue-200 transition-colors duration-300">
+                    <use href="/assets/icons/fontawesome/regular/folder.svg"></use>
+                </svg>
+            
+                <h2 class="text-2xl font-bold  text-gray-800 
+                            dark:text-gray-200 transition-colors duration-300">
+                        <span class="text-blue-500">Fit</span>NEase
+                </h2>
+            </div>
+
+
+            <!-- Right Content -->
+            <div class="flex p-4 space-x-4 items-center">
+
+                <h2 class="text-lg font-semibold text-gray-800 
+                            dark:text-gray-200 transition-colors duration-300">
+                    MOBILE
+                </h2>
+
+                <h4 class="text-gray-600 dark:text-gray-400 transition-colors duration-300
+                            italic mr-2">
+                    2026
+                </h4>
+            </div>
+
+        </button>
+
     </div>
 
     <!-- Skeleton Loader Section -->
@@ -113,7 +150,7 @@
         
         <div class="h-6 w-32 bg-gray-300 dark:bg-gray-700 rounded animate-pulse"></div>
 
-        <div class="bg-white dark:bg-slate-900 rounded-2xl border border-gray-100 dark:border-slate-800 p-6 shadow-sm">
+        <div>
             <div class="flex flex-col space-y-6">
                 <div class="h-8 w-1/3 bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse"></div>
                 
@@ -148,6 +185,11 @@
         <div id="project-2" class="dynamic-project hidden">
             <?php include __DIR__ . '/../projects/project-2.php'; ?>
         </div>
+
+        <div id="project-3" class="dynamic-project hidden">
+            <?php include __DIR__ . '/../projects/project-3.php'; ?>
+        </div>
+
     </div>
 
 </div>
