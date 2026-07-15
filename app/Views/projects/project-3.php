@@ -63,7 +63,7 @@
                     Year
                 </p>
                 <p class="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-800 truncate dark:text-gray-200">
-                    2026
+                    2025-2026
                 </p>
             </div>
             <!-- Role -->

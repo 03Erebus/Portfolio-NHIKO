@@ -58,7 +58,7 @@
 
         <!-- Project Card 1 -->
         <button onclick="showProject('project-1')" 
-                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] 
+                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] hover-breathe
                         rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 
                         text-left border border-gray-200 dark:border-slate-800">
 
@@ -94,7 +94,7 @@
 
         <!-- Project Card 2 -->
         <button onclick="showProject('project-2')" 
-                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] 
+                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] hover-breathe
                         rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 
                         text-left border border-gray-200 dark:border-slate-800">
 
@@ -130,7 +130,7 @@
 
         <!-- Project Card 3 -->
         <button onclick="showProject('project-3')" 
-                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] 
+                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] hover-breathe
                         rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 
                         text-left border border-gray-200 dark:border-slate-800">
 
@@ -155,7 +155,7 @@
                         transition-transform duration-500 z-10">
 
                 <div class="flex items-center text-gray-500 text-xs sm:text-sm">
-                    <span class="font-medium text-blue-400">2026</span>
+                    <span class="font-medium text-blue-400">2025-2026</span>
                     <span class="mx-2">•</span>
                     <span class="truncate">MOBILE</span>
                 </div>
