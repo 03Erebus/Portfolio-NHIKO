@@ -1,7 +1,7 @@
 <div class="container mx-auto flex grow flex-col justify-center w-full">
     <!-- Top Content -->
-    <div class="flex flex-row items-center justify-evenly w-full max-h-screen-sm space-x-50 bg-gray-50 
-                    dark:bg-gray-900 transition-colors duration-300 max-lg:flex-col">
+    <div class="flex flex-row items-center justify-evenly w-full max-h-screen-sm space-x-50
+                transition-colors duration-300 max-lg:flex-col">
         
             <!-- Left Content -->
             <div class="flex flex-col w-full mx-auto p-6 space-y-6 items-center">
@@ -25,7 +25,7 @@
                 <!-- About Section -->
                 <section id="about" class="hidden transition-all duration-500">
                     <!-- About Me Content -->
-                    <div class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+                    <div class="transition-colors duration-300">
                         <h2 class="typewriter text-3xl font-semibold text-gray-800 mb-2
                                 dark:text-gray-200">
                             About Me
@@ -36,7 +36,7 @@
                         </p>
                     </div>
                     <!-- Social Links -->
-                    <div class="mt-10 bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+                    <div class="mt-10 transition-colors duration-500">
                         <p class="typewriter text-xl font-semibold text-gray-800 mb-4
                                 dark:text-gray-200 hover:transform-stroke  duration-150">
                             Connect with me on:

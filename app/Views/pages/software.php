@@ -4,18 +4,39 @@
     <div class="h-4 w-32 bg-gray-300 dark:bg-gray-700 rounded-md py-6 animate-pulse">
     </div>
 
-    <div class="flex flex-col space-y-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-        <div class="flex flex-row items-center w-full h-auto bg-gray-100 border border-gray-300
-                    dark:bg-gray-700 dark:border-gray-600 rounded-lg py-4 px-6 animate-pulse">
-            <div class="h-16 w-16 bg-gray-300 dark:bg-gray-600 rounded-md m-2 animate-pulse"></div>
-            <div class="h-8 w-32 bg-gray-300 dark:bg-gray-600 rounded-md m-2 animate-pulse"></div>
+        <div class=" relative flex flex-row items-center w-full 
+                    aspect-[4/3] sm:aspect-square md:aspect-[4/3] 
+                    bg-gray-100 border border-gray-300
+                    dark:bg-gray-700 dark:border-gray-600 
+                    rounded-lg py-4 px-6 animate-pulse">
+            <div class="absolute h-8 w-32 bg-gray-300 left-4 top-4
+                        dark:bg-gray-600 rounded-md m-2 animate-pulse"></div>
+            <div class="absolute h-8 w-42 bg-gray-300 bottom-0 right-0
+                        dark:bg-gray-600 rounded-md mx-4 animate-pulse my-4"></div>
         </div>
 
-        <div class="flex flex-row items-center w-full h-auto bg-gray-100 border border-gray-300
-                    dark:bg-gray-700 dark:border-gray-600 rounded-lg py-4 px-6 animate-pulse">
-            <div class="h-16 w-16 bg-gray-300 dark:bg-gray-600 rounded-md m-2 animate-pulse"></div>
-            <div class="h-8 w-32 bg-gray-300 dark:bg-gray-600 rounded-md m-2 animate-pulse"></div>
+        <div class=" relative flex flex-row items-center w-full 
+                    aspect-[4/3] sm:aspect-square md:aspect-[4/3] 
+                    bg-gray-100 border border-gray-300
+                    dark:bg-gray-700 dark:border-gray-600 
+                    rounded-lg py-4 px-6 animate-pulse">
+            <div class="absolute h-8 w-32 bg-gray-300 left-4 top-4
+                        dark:bg-gray-600 rounded-md m-2 animate-pulse"></div>
+            <div class="absolute h-8 w-42 bg-gray-300 bottom-0 right-0
+                        dark:bg-gray-600 rounded-md mx-4 animate-pulse my-4"></div>
+        </div>
+
+        <div class=" relative flex flex-row items-center w-full 
+                    aspect-[4/3] sm:aspect-square md:aspect-[4/3] 
+                    bg-gray-100 border border-gray-300
+                    dark:bg-gray-700 dark:border-gray-600 
+                    rounded-lg py-4 px-6 animate-pulse">
+            <div class="absolute h-8 w-32 bg-gray-300 left-4 top-4
+                        dark:bg-gray-600 rounded-md m-2 animate-pulse"></div>
+            <div class="absolute h-8 w-42 bg-gray-300 bottom-0 right-0
+                        dark:bg-gray-600 rounded-md mx-4 animate-pulse my-4"></div>
         </div>
     
     </div>
@@ -32,113 +53,113 @@
     </div>
 
     <!-- Projects List Grid -->
-    <div id="projects-list" class="flex flex-col space-y-4">
+    <div id="projects-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6
+                                    transition-all duration-500">
 
         <!-- Project Card 1 -->
         <button onclick="showProject('project-1')" 
-                class="flex items-center justify-between p-2 hover-breathe
-                bg-white dark:bg-gray-800 border border-gray-200 
-                dark:border-gray-700 rounded-xl hover:shadow-md transition-shadow w-full text-left">
+                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] 
+                        rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 
+                        text-left border border-gray-200 dark:border-slate-800">
 
-            <!-- Left Content -->
-            <div class="flex py-2 px-4 space-x-4 items-center">
-                <svg fill="none" viewBox="0 0 24 24" 
-                    stroke-width="1.5" stroke="currentColor" 
-                    class="size-12 inline-block text-blue-800 dark:text-blue-200 transition-colors duration-300">
-                    <use href="/assets/icons/fontawesome/regular/folder.svg"></use>
-                </svg>
-            
-                <h2 class="text-2xl font-bold text-gray-800 
-                            dark:text-gray-200 transition-colors duration-300">
-                    Helio<span class="text-orange-500">Cam</span>
-                </h2>
+            <!-- Background Image -->
+            <img src="/assets/projects/Project-Thumbnail1-v2.png" alt="HelioCam" 
+                    class="absolute inset-0 w-full h-full object-cover transition-transform 
+                    duration-700 group-hover:scale-100">
+
+            <!-- Dark Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-blue-900/10 
+            to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+            <!-- Category Badge (Blue for Software) -->
+            <div class="absolute top-4 left-4 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] 
+                        sm:text-xs font-bold tracking-wider uppercase bg-blue-600/80 text-blue-50 border 
+                        border-white/20 z-10">
+                Software
             </div>
 
+            <!-- Project Details -->
+            <div class="absolute bottom-0 right-0 w-auto p-5 md:p-6 translate-y-2 group-hover:translate-y-0 
+                        transition-transform duration-500 z-10">
 
-            <!-- Right Content -->
-            <div class="flex flex-row p-4 space-x-4 items-center">
-                <h2 class="text-lg font-semibold text-gray-800 
-                            dark:text-gray-200 transition-colors duration-300">
-                    MOBILE | WEBSITE
-                </h2>
-                <h4 class="text-gray-600 dark:text-gray-400 transition-colors duration-300
-                            italic mr-2">
-                    2025
-                </h4>
+                <div class="flex items-center text-gray-500 text-xs sm:text-sm">
+                    <span class="font-medium text-blue-400">2024-2025</span>
+                    <span class="mx-2">•</span>
+                    <span class="truncate">MOBILE | WEB</span>
+                </div>
+
             </div>
 
         </button>
 
         <!-- Project Card 2 -->
         <button onclick="showProject('project-2')" 
-                class="flex items-center justify-between p-2 hover-breathe
-                bg-white dark:bg-gray-800 border border-gray-200 
-                dark:border-gray-700 rounded-xl hover:shadow-md transition-shadow w-full text-left">
+                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] 
+                        rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 
+                        text-left border border-gray-200 dark:border-slate-800">
 
-            <!-- Left Content -->
-            <div class="flex py-2 px-4 space-x-4 items-center">
-                <svg fill="none" viewBox="0 0 24 24" 
-                    stroke-width="1.5" stroke="currentColor" 
-                    class="size-12 inline-block text-blue-800 dark:text-blue-200 transition-colors duration-300">
-                    <use href="/assets/icons/fontawesome/regular/folder.svg"></use>
-                </svg>
-            
-                <h2 class="text-2xl font-bold bg-gradient-to-r from-green-500 to-blue-500 
-                            bg-clip-text text-transparent transition-colors duration-300">
-                        ITRF
-                </h2>
+            <!-- Background Image -->
+            <img src="/assets/projects/Project-Thumbnail2.png" alt="Restaurant Banner" 
+                    class="absolute inset-0 w-full h-full object-cover transition-transform 
+                            duration-700 group-hover:scale-100">
+
+            <!-- Dark Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-blue-900/10 
+                        to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+            <!-- Category Badge (Blue for Software) -->
+            <div class="absolute top-4 left-4 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] 
+                        sm:text-xs font-bold tracking-wider uppercase bg-blue-600/80 text-blue-50 border 
+                        border-white/20 z-10">
+                Software
             </div>
 
+            <!-- Project Details -->
+            <div class="absolute bottom-0 right-0 w-auto p-5 md:p-6 translate-y-2 group-hover:translate-y-0 
+                        transition-transform duration-500 z-10">
 
-            <!-- Right Content -->
-            <div class="flex p-4 space-x-4 items-center">
+                <div class="flex items-center text-gray-500 text-xs sm:text-sm">
+                    <span class="font-medium text-blue-400">2026</span>
+                    <span class="mx-2">•</span>
+                    <span class="truncate">MOBILE | WEB</span>
+                </div>
 
-                <h2 class="text-lg font-semibold text-gray-800 
-                            dark:text-gray-200 transition-colors duration-300">
-                    MOBILE | WEBSITE
-                </h2>
-
-                <h4 class="text-gray-600 dark:text-gray-400 transition-colors duration-300
-                            italic mr-2">
-                    2026
-                </h4>
             </div>
 
         </button>
 
         <!-- Project Card 3 -->
         <button onclick="showProject('project-3')" 
-                class="flex items-center justify-between p-2 hover-breathe
-                bg-white dark:bg-gray-800 border border-gray-200 
-                dark:border-gray-700 rounded-xl hover:shadow-md transition-shadow w-full text-left">
+                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] 
+                        rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 
+                        text-left border border-gray-200 dark:border-slate-800">
 
-            <!-- Left Content -->
-            <div class="flex py-2 px-4 space-x-4 items-center">
-                <svg fill="none" viewBox="0 0 24 24" 
-                    stroke-width="1.5" stroke="currentColor" 
-                    class="size-12 inline-block text-blue-800 dark:text-blue-200 transition-colors duration-300">
-                    <use href="/assets/icons/fontawesome/regular/folder.svg"></use>
-                </svg>
-            
-                <h2 class="text-2xl font-bold  text-gray-800 
-                            dark:text-gray-200 transition-colors duration-300">
-                        <span class="text-blue-500">Fit</span>NEase
-                </h2>
+            <!-- Background Image -->
+            <img src="/assets/projects/Project-Thumbnail3.png" alt="Restaurant Banner" 
+                    class="absolute inset-0 w-full h-full object-cover transition-transform 
+                            duration-700 group-hover:scale-100">
+
+            <!-- Dark Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-blue-900/10 
+                        to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+            <!-- Category Badge (Blue for Software) -->
+            <div class="absolute top-4 left-4 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] 
+                        sm:text-xs font-bold tracking-wider uppercase bg-blue-600/80 text-blue-50 border 
+                        border-white/20 z-10">
+                Software
             </div>
 
+            <!-- Project Details -->
+            <div class="absolute bottom-0 right-0 w-auto p-5 md:p-6 translate-y-2 group-hover:translate-y-0 
+                        transition-transform duration-500 z-10">
 
-            <!-- Right Content -->
-            <div class="flex p-4 space-x-4 items-center">
+                <div class="flex items-center text-gray-500 text-xs sm:text-sm">
+                    <span class="font-medium text-blue-400">2026</span>
+                    <span class="mx-2">•</span>
+                    <span class="truncate">MOBILE</span>
+                </div>
 
-                <h2 class="text-lg font-semibold text-gray-800 
-                            dark:text-gray-200 transition-colors duration-300">
-                    MOBILE
-                </h2>
-
-                <h4 class="text-gray-600 dark:text-gray-400 transition-colors duration-300
-                            italic mr-2">
-                    2026
-                </h4>
             </div>
 
         </button>

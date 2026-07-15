@@ -298,7 +298,7 @@
 
         <!-- Screenshot of Wireframes -->
         <div class="w-full h-[300px] md:h-[600px] max-w-6xl bg-contain bg-center bg-no-repeat
-                    mx-auto py-4 bg-[url('/assets/projects/mockups-feats-fit.png')]">
+                    mx-auto py-4 bg-[url('/assets/projects/mockups-feats2.png')]">
         </div>
 
         <!-- Outcome -->
@@ -311,7 +311,7 @@
                 </h1>
 
                 <p class="scroll-typewriter text-[12px] sm:text-sm md:text-md lg:text-lg text-gray-600 dark:text-gray-200"
-                    data-text="We successfully defended our thesis and developed the FitNEase application, 
+                    data-text="We successfully defended our thesis, developed, and deployed FitNEase application, 
                     validating both the research behind it and the design decisions made throughout the process.">
                 </p>
 
@@ -331,10 +331,10 @@
                 </p>
             </div>
 
-            <div class="p-4">
-                <img src="/assets/projects/Re_Coders_Logo.png" 
+            <div class="p-4 w-auto">
+                <img src="/assets/projects/New-recoders-logo.png" 
                             alt="Re:Coders Logo" 
-                            class="size-18 md:size-24 lg:size-32 rounded-full shadow-lg resize">
+                            class="w-16 md:w-20 lg:w-24 h-auto resize">
             </div>
 
         </div>
