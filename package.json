@@ -30,7 +30,7 @@
     "simple-icons": "^16.24.1"
   },
   "scripts": {
-  "build": "tailwindcss -i ./resources/css/input.css -o ./public/css/output.css --minify",
+  "build": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/output.css --minify",
   "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
