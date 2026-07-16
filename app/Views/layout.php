@@ -65,7 +65,6 @@
 
 
         document.addEventListener('DOMContentLoaded', () => {
-        addWatermark(); // customize the text via addWatermark('Your Name · 2026')
 
         const TAGS = ['<' + '?php', '->', '$data', 'echo', '</div>', 'class=', 'grid-cols-3', '->render()'];
         const field = document.getElementById('tag-field');
