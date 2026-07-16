@@ -28,31 +28,45 @@
     <!-- Footer -->
     <?php include __DIR__ . '/components/footer.php'; ?>
 
-<!-- JavaScript -->
-<script>
+    <!-- JavaScript -->
+    <script>
         // Shared by both listeners below — must live outside them
-    function showSecurityNotice() {
-        console.warn('This content is protected. Downloading or copying is not allowed.');
-    }
+        function showSecurityNotice() {
+            console.warn('This content is protected. Downloading or copying is not allowed.');
+        }
 
-    // For Disabling Key Commands
-    document.addEventListener('keydown', e => {
-        const key = e.key.toLowerCase();
-        const isModifier = e.ctrlKey || e.metaKey || e.altKey;
+        // For Disabling Key Commands
+        document.addEventListener('keydown', e => {
+            const key = e.key.toLowerCase();
+            const isModifier = e.ctrlKey || e.metaKey || e.altKey;
 
-        if (isModifier && (key === 's' || key === 'u' || key === 'p' || key === 'a' || key === 'c' || key === 'x')) {
+            if (isModifier && (key === 's' || key === 'u' || key === 'p' || key === 'a' || key === 'c' || key === 'x')) {
+                e.preventDefault();
+                showSecurityNotice();
+            }
+        });
+
+        // For warning
+        document.addEventListener('contextmenu', e => {
             e.preventDefault();
             showSecurityNotice();
-        }
-    });
+        });
 
-    // For warning
-    document.addEventListener('contextmenu', e => {
-        e.preventDefault();
-        showSecurityNotice();
-    });
+        // Privacy blur/dim — activates when tab/app loses focus
+        document.addEventListener('visibilitychange', () => {
+            const blurClasses = ['blur-lg', 'transition-[filter]', 'duration-200'];
 
-    document.addEventListener('DOMContentLoaded', () => {
+            if (document.hidden) {
+                document.body.classList.add(...blurClasses);
+            } else {
+                document.body.classList.remove(...blurClasses);
+            }
+        });
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+        addWatermark(); // customize the text via addWatermark('Your Name · 2026')
+
         const TAGS = ['<' + '?php', '->', '$data', 'echo', '</div>', 'class=', 'grid-cols-3', '->render()'];
         const field = document.getElementById('tag-field');
         if (!field) return;
@@ -100,7 +114,7 @@
             requestAnimationFrame(tick);
         }
     });
+</script>
 
-    </script>
 </body>
 </html>
