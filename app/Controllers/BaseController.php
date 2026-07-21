@@ -20,22 +20,18 @@ class BaseController
             $content = ob_get_clean(); 
             
         } else {
-            
-            // 3. THE 404 LOGIC
-            // Set the official "Not Found" network status
             http_response_code(404);
             
-            ob_start();
             $errorFile = __DIR__ . "/../Views/errors/404.php";
             
             if (file_exists($errorFile)) {
-                require $errorFile; // Load your custom 404.php file
+                // Directly require it and STOP execution so layout.php doesn't wrap it!
+                require $errorFile;
+                exit; 
             } else {
-                // Fallback just in case you delete the 404.php file by accident
-                echo "<h1>404 - Page Not Found</h1><p>We couldn't find the page you were looking for.</p>";
+                echo "<h1>404 - Page Not Found</h1><p>The resource you requested is missing from the server.</p>";
+                exit;
             }
-            
-            $content = ob_get_clean();
         }
 
         // 4. Load the master layout

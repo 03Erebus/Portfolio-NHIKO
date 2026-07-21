@@ -2,15 +2,15 @@
 <div id="project-3-content" class="container flex grow flex-col">
 
     <?php
-    // 1. ISOLATE THE MOCKUPS: Find only the mockups for HelioCam
-    $projectMockups = [];
-    foreach ($projects as $p) {
-        if ($p['id'] === 'project-3') {
-            // Grab the nested mockups array we defined earlier
-            $projectMockups = $p['mockups'] ?? [];
-            break;
+        // 1. ISOLATE THE MOCKUPS: Find only the mockups for HelioCam
+        $projectMockups = [];
+        foreach ($projects as $p) {
+            if ($p['id'] === 'project-3') {
+                // Grab the nested mockups array we defined earlier
+                $projectMockups = $p['mockups'] ?? [];
+                break;
+            }
         }
-    }
     ?>
 
     <!-- Short Details -->
@@ -193,12 +193,12 @@
             <div id="carousel-track-3" class="flex rotate-0 hover:-rotate-6 hover:scale-95
                     transition-transform duration-500 ease-in-out">
                 
-                <?php foreach ($projectMockups as $mockup): ?>
+                <?php foreach ($projectMockups as $mockup){ ?>
                     <div class="w-full shrink-0 flex justify-center items-center px-4">
                         
                         <?php
                         // Set image path and load correct component based on nested data
-                        $imagePath = 'assets/projects/' . $mockup['image'];
+                        $imagePath = '/assets/projects/' . $mockup['image'];
 
                         if ($mockup['type'] === 'desktop') {
                             include __DIR__ . '/../components/mockup-desktop.php';
@@ -208,7 +208,7 @@
                         ?>
 
                     </div>
-                <?php endforeach; ?>
+                <?php } ?>
 
             </div>
 

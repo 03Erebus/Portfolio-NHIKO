@@ -2,15 +2,15 @@
 <div id="project-2-content" class="container flex grow flex-col">
 
     <?php
-    // 1. ISOLATE THE MOCKUPS: Find only the mockups for HelioCam
-    $projectMockups = [];
-    foreach ($projects as $p) {
-        if ($p['id'] === 'project-2') {
-            // Grab the nested mockups array we defined earlier
-            $projectMockups = $p['mockups'] ?? [];
-            break;
+        // 1. ISOLATE THE MOCKUPS: Find only the mockups for HelioCam
+        $projectMockups = [];
+        foreach ($projects as $p) {
+            if ($p['id'] === 'project-2') {
+                // Grab the nested mockups array we defined earlier
+                $projectMockups = $p['mockups'] ?? [];
+                break;
+            }
         }
-    }
     ?>
 
     <!-- Short Details -->
@@ -26,7 +26,7 @@
 
             <div class="p-2 lg:p-4 w-auto">
                 <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold 
-                            bg-gradient-to-r from-green-500 to-blue-500 
+                            bg-linear-to-r from-green-500 to-blue-500 
                             bg-clip-text text-transparent transition-colors duration-500 drop-shadow-lg">
                     ITRF
                 </h1>
@@ -190,12 +190,12 @@
             <div id="carousel-track-2" class="flex rotate-0 hover:-rotate-6 hover:scale-95
                     transition-transform duration-500 ease-in-out">
                 
-                <?php foreach ($projectMockups as $mockup): ?>
+                <?php foreach ($projectMockups as $mockup){ ?>
                     <div class="w-full shrink-0 flex justify-center items-center px-4">
                         
                         <?php
                         // Set image path and load correct component based on nested data
-                        $imagePath = 'assets/projects/' . $mockup['image'];
+                        $imagePath = '/assets/projects/' . $mockup['image'];
 
                         if ($mockup['type'] === 'desktop') {
                             include __DIR__ . '/../components/mockup-desktop.php';
@@ -205,7 +205,7 @@
                         ?>
 
                     </div>
-                <?php endforeach; ?>
+                <?php } ?>
 
             </div>
 

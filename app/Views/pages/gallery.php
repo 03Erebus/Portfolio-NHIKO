@@ -1,44 +1,45 @@
+
 <!-- Loader -->
-<div id="skeleton-loader" class="container flex flex-col space-y-2 mx-auto">
+<div id="skeleton-loader" class="container flex flex-col space-y-1 mx-auto">
     <!-- Title and Description Section -->
     <div class="h-6 w-32 bg-gray-300 dark:bg-gray-700 rounded py-6 animate-pulse">
     </div>
 
     <!-- Gallery Grid  Portraits Section -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1.5 resize py-2">    
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1 border border-gray-200">    
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
     </div>
 
     <!-- For Landscape Mode -->
-    <div class="grid grid-cols-1">
-        <div class="h-20 w-full bg-gray-300 dark:bg-gray-700 rounded-lg animate-pulse">
+    <div class="grid grid-cols-1 border border-gray-200">
+        <div class="h-120 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
     </div>
 
     <!-- Gallery Grid  Series Section -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1.5 py-2"> 
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1 border border-gray-200"> 
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
-        <div class="h-50 w-full bg-gray-300 dark:bg-gray-700 rounded-md animate-pulse">
+        <div class="h-60 w-full bg-gray-300 dark:bg-gray-700 rounded-sm animate-pulse">
         </div>
     </div>
 </div>
@@ -52,543 +53,103 @@
             </h1>
     </div>
 
-    <!-- Gallery Grid  Portraits Section -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 h-auto resize">
-        
-        <!-- Image 1 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Yska.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
+    <!-- Gallery Grid -->
+    <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 h-auto resize 
+                grid-flow-dense gap-0.5">
 
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Yskaela
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Portrait
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Image 2 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Jilly.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Jillipuff
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Portrait
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Image 3 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Seoyeon.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Hyun Seoyeon
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Portrait
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-        
-        <!-- Image 4 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Hanji.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Han Ji-hyun
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Portrait
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-        
-        </div>
-
-        <!-- Image 5 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Christine.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Christine
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Portrait
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2024
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Image 6 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Moira.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Moira
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Portrait
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2024
-                </p>
-            </div>
-
-        </div>
+        <?php 
+        if (!empty($artworks)) {
+            foreach ($artworks as $art) {
+                $title = $art['title'] ?? '';
+                $category = $art['category'] ?? '';
+                $year = $art['year'] ?? '';
+                $image = $art['image'] ?? '';
+                $size = $art['size'] ?? 'square';
+                
+                include __DIR__ . '/../components/artwork.php';
+            }
+        }
+        ?>
+ 
     </div>
 
-    <!-- For Landscape Mode -->
-    <div class="grid grid-cols-1 h-auto">
-
-        <!-- Image 1 -->
-         <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Inside of jeep_2020.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Jeep
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2020
-                </p>
-            </div>
-
-         </div>
-
-    </div>
-
-    <!-- Gallery Grid  Series Section -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 h-auto"> 
-
-        <!-- Image 1 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Cycle-5.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Skull
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Image 2 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Cycle-2.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Helmet
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-        
-        <!-- Image 3 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Cycle-4.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Demon Head
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-        
-        <!-- Image 4 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Cycle-6.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Death Cycling
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Image 5 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Cycle-3.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Death
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-        
-        <!-- Image 6 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Cycle-1.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Bicycle
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Two Grid Gallery  Series Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-0 h-auto">   
-        <!-- Image 1 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Motor-1.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Lakbay
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Image 2 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-            
-            <img src="/assets/arts/Motor-2.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Pahinga
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- For Solo -->
-    <div class="grid grid-cols-1 h-auto">
-        <!-- Image 1 -->
-         <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-
-            <img src="/assets/arts/Three-swords.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Three Swords
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-         </div>
-    </div>
-
-    <!-- Three Grid Gallery  Series Section -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-0 h-auto">   
-
-        <!-- Image 1 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-
-            <img src="/assets/arts/Bone-3.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Skull II
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Image 2 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-
-            <img src="/assets/arts/Bone-2.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Smoke Life
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2023
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Image 3 -->
-        <div class="group relative hover:z-10 hover-breathe border border-gray-200 dark:border-gray-700 
-                    w-full overflow-hidden aspect-auto shadow-lg">
-
-            <img src="/assets/arts/Bone-1.png" 
-                    alt="Gallery Image" 
-                    class="w-full h-full transition-transform duration-500 group-hover:scale-110">
-
-            <div class="absolute w-full h-full inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 
-                        to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-            <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 
-                        translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <h3 class="text-xl font-semibold text-white mb-1 tracking-tight">
-                    Broken Bones
-                </h3>
-                <p class="text-gray-400 text-md">
-                    Digital Art • Illustration
-                </p>
-                <p class="text-gray-400 text-sm">
-                    2024
-                </p>
-            </div>
-
-        </div>
-
-    </div>
+ 
 
 </div>
 
 <!-- Javascript -->
 <script>
 
-document.addEventListener("DOMContentLoaded", () => {
+    function fillEmptyGridSlots() {
+        const grid = document.getElementById('gallery-grid');
+        if (!grid) return;
 
-    const skeletonLoader = document.getElementById('skeleton-loader');
-    const mainContent = document.getElementById('gallery');
+        document.querySelectorAll('.filler-frame').forEach(el => el.remove());
+
+        const columnCount = window.getComputedStyle(grid)
+            .getPropertyValue('grid-template-columns')
+            .split(' ')
+            .filter(v => v.trim() !== '').length;
+
+        const items = Array.from(grid.children).filter(child => {
+            return !child.classList.contains('filler-frame') &&
+                window.getComputedStyle(child).display !== 'none';
+        });
+
+        if (items.length === 0) return;
+
+        // Find how far right the last row actually extends
+        const gridRect = grid.getBoundingClientRect();
+        const lastRowTop = Math.max(...items.map(el => el.getBoundingClientRect().top));
+        const lastRowItems = items.filter(el =>
+            Math.abs(el.getBoundingClientRect().top - lastRowTop) < 1
+        );
+        const lastRowRight = Math.max(...lastRowItems.map(el => el.getBoundingClientRect().right));
+
+        const colWidth = gridRect.width / columnCount;
+        const columnsUsedInLastRow = Math.round((lastRowRight - gridRect.left) / colWidth);
+        const slotsToFill = columnCount - columnsUsedInLastRow;
+
+        console.log(`Columns: ${columnCount} | Last row uses: ${columnsUsedInLastRow} | Filling: ${slotsToFill}`);
+
+        if (slotsToFill <= 0 || slotsToFill >= columnCount) return;
+
+        for (let i = 0; i < slotsToFill; i++) {
+            const filler = document.createElement('div');
+            filler.className = 'filler-frame w-full h-auto bg-gray-100/50 border border-gray-300 dark:bg-gray-700 dark:border-gray-600 rounded-lg hover:bg-gray-500/50 hover:dark:bg-gray-800/50 cursor-pointer';
+            grid.appendChild(filler);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const skeletonLoader = document.getElementById('skeleton-loader');
+        const mainContent = document.getElementById('gallery');
 
         setTimeout(() => {
-            // Hide the skeleton
             skeletonLoader.classList.add('hidden');
             skeletonLoader.classList.remove('flex');
-
-            // Reveal the actual gallery
             mainContent.classList.remove('hidden');
             mainContent.classList.add('flex');
-        }, 800); // 800ms delay. You can adjust this!
 
-});
+            // Wait for images to load before measuring layout
+            const images = mainContent.querySelectorAll('img');
+            Promise.all(Array.from(images).map(img =>
+                img.complete ? Promise.resolve() : new Promise(res => img.onload = img.onerror = res)
+            )).then(() => {
+                window.requestAnimationFrame(fillEmptyGridSlots);
+            });
+        }, 800);
+    });
+
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        const mainContent = document.getElementById('gallery');
+        if (mainContent && !mainContent.classList.contains('hidden')) {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                window.requestAnimationFrame(fillEmptyGridSlots);
+            }, 150);
+        }
+    });
 
 </script>

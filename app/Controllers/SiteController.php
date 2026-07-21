@@ -7,16 +7,15 @@ class SiteController extends BaseController
 {
     public function home() 
     {
-        // No array needed at all for the home page!
         $this->renderView('home');
     }
 
     public function gallery() 
     {
-        $model = new Project();
-        $artworks = $model->getByCategory('Digital Art'); 
+        // Dynamically loads your artwork data file
+        $model = new Project('artworks.php');
+        $artworks = $model->getAllProjects(); 
 
-        // Only pass the artworks data
         $this->renderView('gallery', [
             'artworks' => $artworks 
         ]);
@@ -24,12 +23,13 @@ class SiteController extends BaseController
 
     public function software() 
     {
-        $model = new Project();
-        $devProjects = $model->getByCategory('Software'); 
+        // Dynamically loads your software data file
+        $model = new Project('projects.php');
+        $devProjects = $model->getAllProjects(); 
 
-        // Only pass the projects data
         $this->renderView('software', [
             'projects' => $devProjects 
         ]);
     }
+    
 }

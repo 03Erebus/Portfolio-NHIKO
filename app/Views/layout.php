@@ -15,7 +15,7 @@
                 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300"> 
 
     <!-- For Live tags background -->
-    <div id="tag-field" class="fixed inset-0 -z-10 overflow-hidden pointer-events-none"></div>
+    <div id="tag-field" class="fixed inset-0 -z-1 overflow-hidden pointer-events-none"></div>
 
     <!-- Navigation Bar -->
     <?php include __DIR__ . '/components/nav.php'; ?>

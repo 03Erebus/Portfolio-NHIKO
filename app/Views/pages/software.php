@@ -1,3 +1,4 @@
+
 <!-- Loader -->
 <div id="skeleton-loader-1" class="container flex flex-col space-y-4 mx-auto">
     <!-- Title and Description Section -->
@@ -56,113 +57,23 @@
     <div id="projects-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6
                                     transition-all duration-500">
 
-        <!-- Project Card 1 -->
-        <button onclick="showProject('project-1')" 
-                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] hover-breathe
-                        rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 
-                        text-left border border-gray-200 dark:border-slate-800">
+        <?php 
+        if (!empty($projects)){
+            foreach ($projects as $project){
+                // Unpack variables for the component scope
+                $id = $project['id'] ?? '';
+                $title = $project['title'] ?? '';
+                $category = $project['category'] ?? '';
+                $year = $project['year'] ?? '';
+                $platforms = $project['platforms'] ?? '';
+                $thumbnail = $project['thumbnail'] ?? '';
+                
+                // Include your custom button component
+                include __DIR__ . '/../components/project-thumbnail.php';
+            }
+        }
+        ?>
 
-            <!-- Background Image -->
-            <img src="/assets/projects/Project-Thumbnail1-v2.png" alt="HelioCam" 
-                    class="absolute inset-0 w-full h-full object-cover transition-transform 
-                    duration-700 group-hover:scale-100">
-
-            <!-- Dark Gradient Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-blue-900/10 
-            to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-            <!-- Category Badge (Blue for Software) -->
-            <div class="absolute top-4 left-4 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] 
-                        sm:text-xs font-bold tracking-wider uppercase bg-blue-600/80 text-blue-50 border 
-                        border-white/20 z-10">
-                Software
-            </div>
-
-            <!-- Project Details -->
-            <div class="absolute bottom-0 right-0 w-auto p-5 md:p-6 translate-y-2 group-hover:translate-y-0 
-                        transition-transform duration-500 z-10">
-
-                <div class="flex items-center text-gray-500 text-xs sm:text-sm">
-                    <span class="font-medium text-blue-400">2024-2025</span>
-                    <span class="mx-2">•</span>
-                    <span class="truncate">MOBILE | WEB</span>
-                </div>
-
-            </div>
-
-        </button>
-
-        <!-- Project Card 2 -->
-        <button onclick="showProject('project-2')" 
-                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] hover-breathe
-                        rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 
-                        text-left border border-gray-200 dark:border-slate-800">
-
-            <!-- Background Image -->
-            <img src="/assets/projects/Project-Thumbnail2.png" alt="Restaurant Banner" 
-                    class="absolute inset-0 w-full h-full object-cover transition-transform 
-                            duration-700 group-hover:scale-100">
-
-            <!-- Dark Gradient Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-blue-900/10 
-                        to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-            <!-- Category Badge (Blue for Software) -->
-            <div class="absolute top-4 left-4 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] 
-                        sm:text-xs font-bold tracking-wider uppercase bg-blue-600/80 text-blue-50 border 
-                        border-white/20 z-10">
-                Software
-            </div>
-
-            <!-- Project Details -->
-            <div class="absolute bottom-0 right-0 w-auto p-5 md:p-6 translate-y-2 group-hover:translate-y-0 
-                        transition-transform duration-500 z-10">
-
-                <div class="flex items-center text-gray-500 text-xs sm:text-sm">
-                    <span class="font-medium text-blue-400">2026</span>
-                    <span class="mx-2">•</span>
-                    <span class="truncate">MOBILE | WEB</span>
-                </div>
-
-            </div>
-
-        </button>
-
-        <!-- Project Card 3 -->
-        <button onclick="showProject('project-3')" 
-                class="group relative w-full aspect-[4/3] sm:aspect-square md:aspect-[4/3] hover-breathe
-                        rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 
-                        text-left border border-gray-200 dark:border-slate-800">
-
-            <!-- Background Image -->
-            <img src="/assets/projects/Project-Thumbnail3.png" alt="Restaurant Banner" 
-                    class="absolute inset-0 w-full h-full object-cover transition-transform 
-                            duration-700 group-hover:scale-100">
-
-            <!-- Dark Gradient Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-blue-900/10 
-                        to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-            <!-- Category Badge (Blue for Software) -->
-            <div class="absolute top-4 left-4 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] 
-                        sm:text-xs font-bold tracking-wider uppercase bg-blue-600/80 text-blue-50 border 
-                        border-white/20 z-10">
-                Software
-            </div>
-
-            <!-- Project Details -->
-            <div class="absolute bottom-0 right-0 w-auto p-5 md:p-6 translate-y-2 group-hover:translate-y-0 
-                        transition-transform duration-500 z-10">
-
-                <div class="flex items-center text-gray-500 text-xs sm:text-sm">
-                    <span class="font-medium text-blue-400">2025-2026</span>
-                    <span class="mx-2">•</span>
-                    <span class="truncate">MOBILE</span>
-                </div>
-
-            </div>
-
-        </button>
 
     </div>
 
@@ -199,17 +110,31 @@
             Back
         </button>
 
-        <div id="project-1" class="dynamic-project hidden">
-            <?php include __DIR__ . '/../projects/project-1.php'; ?>
+        <!-- Dynamic Project Details Viewing -->
+        <div id="project-details-wrapper">
+            <?php 
+                if (!empty($projects)){
+                foreach ($projects as $project){
+                    $id = $project['id'] ?? 'unknown-id';
+                    $file = $project['file'] ?? '';
+                ?>
+                    <div id="<?= htmlspecialchars($id); ?>" class="dynamic-project hidden">
+                        <?php 
+                            // Absolute path to your individual project detail files
+                            $filePath = __DIR__ . '/../projects/' . $file;
+                            if (file_exists($filePath)) {
+                                include $filePath;
+                            
+                            }
+                        ?>
+                    </div>
+                <?php 
+                    }
+                }
+                ?>
         </div>
 
-        <div id="project-2" class="dynamic-project hidden">
-            <?php include __DIR__ . '/../projects/project-2.php'; ?>
-        </div>
-
-        <div id="project-3" class="dynamic-project hidden">
-            <?php include __DIR__ . '/../projects/project-3.php'; ?>
-        </div>
+       
 
     </div>
 
@@ -229,7 +154,6 @@
         window.showProject = function(projectId) {
             // 1. Hide the grid of folders
             projectsList.classList.add('hidden');
-            projectsList.classList.remove('flex');
             titlePage.classList.add('hidden');
             titlePage.classList.remove('flex');
 
@@ -268,7 +192,6 @@
 
             // Reveal the grid of folders immediately (no loading needed to go back)
             projectsList.classList.remove('hidden');
-            projectsList.classList.add('flex');
             titlePage.classList.remove('hidden');
             titlePage.classList.add('flex');
         }
@@ -285,5 +208,4 @@
 
 
     });
-
 </script>
